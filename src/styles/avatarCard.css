@@ -1,0 +1,183 @@
+.avatar {
+    min-width: 250px;
+    min-height: 100px;
+    max-width: 550px;
+    max-height: 400;
+    aspect-ratio: 5/3;
+    position: relative;
+}
+
+.avatar-card {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex: 1 0 400px;
+    display: grid;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+
+.blur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    transition: backdrop-filter linear .8s;
+
+}
+
+.card-header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-header-wrapper,
+.rank-fav {
+    position: absolute;
+}
+
+.card-header-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+.rank-fav {
+    display: grid;
+    place-items: center;
+    width: 20%;
+    max-width: 200px;
+    min-width: 100px;
+    border: 7px solid white;
+    border-radius: 0 0 86%;
+    background-color: #083666;
+    color: white;
+    padding: 10px;
+    top: -26px;
+    left: -8px;
+    aspect-ratio: 1/1;
+    z-index: 1;
+}
+
+.ranking {
+    top: -15px;
+    left: -26px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+.rank-wrapper {
+    position: relative;
+}
+
+.char-name {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+    text-indent: 30px;
+    text-shadow: 2px 2px 0 white;
+}
+
+.char-alias {
+    width: 100%;
+    position: absolute;
+    font-size: xx-small;
+    bottom: -15px;
+    left: 95px;
+}
+
+.alias-wrapper {
+    position: relative;
+}
+
+.some-info {
+    display: grid;
+    height: 0px;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    place-items: center;
+    transition: height linear .8s;
+    overflow: hidden;
+}
+
+.some-info ul {
+    width: 80%;
+    padding: 10px;
+}
+
+.zoro {
+    background: url(../img/Zoro-bg.jpg) no-repeat center center;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.chopper {
+    background: url(../img/chopper-bg.jpg) no-repeat center center;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.zoro:hover {
+    background: url(../img/Zoro-bg.jpg) no-repeat right top;
+    background-size: 170%;
+    transition: all linear 1.3s;
+}
+
+.chopper:hover {
+    background: url(../img/chopper-bg.jpg) no-repeat right top;
+    background-size: 170%;
+    transition: all linear 1.3s;
+}
+
+.luffy {
+    background: url(../img/luffy-bg.webp) no-repeat center center;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.luffy:hover {
+    background: url(../img/luffy-bg.webp) no-repeat left top;
+    background-size: 136%;
+    transition: all linear 1.3s;
+}
+
+.avatar-card:hover {
+    grid-template-rows: .1fr, .9fr;
+}
+
+.avatar-card:hover .some-info {
+    height: 100%;
+}
+
+.avatar-card:hover .blur {
+    backdrop-filter: blur(0px);
+}
+
+.luffy .char-name {
+    color: #c0333c;
+}
+
+.zoro .char-name {
+    color: #94cf4d;
+}
+
+.chopper .char-name {
+    color: rgb(250, 195, 205);
+}
+
+.luffy .char-alias,
+.zoro .char-alias,
+.chopper .char-alias {
+    color: #ffff;
+    text-shadow: 0 0 0 white;
+}
