@@ -1,8 +1,8 @@
 .avatar {
     min-width: 250px;
     min-height: 100px;
-    max-width: 550px;
-    max-height: 400;
+    max-width: 400px;
+    max-height: 400px;
     aspect-ratio: 5/3;
     position: relative;
 }
@@ -10,7 +10,7 @@
 .avatar-card {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    flex: 1 0 400px;
+    flex: 1 1 300px;
     display: grid;
     grid-template-rows: 1fr;
     overflow: hidden;
@@ -22,14 +22,12 @@
     width: 100%;
     backdrop-filter: blur(3px);
     transition: backdrop-filter linear .8s;
-
 }
 
 .card-header {
     position: relative;
     width: 100%;
     height: 100%;
-
 }
 
 .card-header-wrapper,
@@ -119,6 +117,7 @@
     background: url(../img/Zoro-bg.jpg) no-repeat center center;
     background-size: 120%;
     transition: all linear 1.3s;
+    min-width: 48%;
 }
 
 .chopper {
@@ -143,11 +142,109 @@
     background: url(../img/luffy-bg.webp) no-repeat center center;
     background-size: 120%;
     transition: all linear 1.3s;
+    min-width: 48%;
+
 }
 
 .luffy:hover {
     background: url(../img/luffy-bg.webp) no-repeat left top;
     background-size: 136%;
+    transition: all linear 1.3s;
+}
+
+.sanji {
+    background: url(../img/sanji-bg.jpg) no-repeat top center;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.sanji:hover {
+    background: url(../img/sanji-bg.jpg) no-repeat left top;
+    background-size: 136%;
+    transition: all linear 1.3s;
+}
+
+.sanji {
+    background: url(../img/sanji-bg.jpg) no-repeat top center;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.sanji:hover {
+    background: url(../img/sanji-bg.jpg) no-repeat left top;
+    background-size: 136%;
+    transition: all linear 1.3s;
+}
+
+.robin {
+    background: url(../img/robin.jpg) no-repeat top center;
+    background-size: 100%;
+    transition: all linear 1.3s;
+}
+
+.robin:hover {
+    background: url(../img/robin.jpg) no-repeat left center;
+    background-size: 110%;
+    transition: all linear 1.3s;
+}
+
+.nami {
+    background: url(../img/Nami.jpg) no-repeat top center;
+    background-size: 110%;
+    transition: all linear 1.3s;
+}
+
+.nami:hover {
+    background: url(../img/Nami.jpg) no-repeat left top;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.jinbe {
+    background: url(../img/jimbe.jpg) no-repeat center center;
+    background-size: 110%;
+    transition: all linear 1.3s;
+}
+
+.jinbe:hover {
+    background: url(../img/jimbe.jpg) no-repeat left top;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.usopp {
+    background: url(../img/godusopp.jpg) no-repeat center center;
+    background-size: 110%;
+    transition: all linear 1.3s;
+}
+
+.usopp:hover {
+    background: url(../img/godusopp.jpg) no-repeat left top;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.franky {
+    background: url(../img/franky.jpg) no-repeat center center;
+    background-size: 110%;
+    transition: all linear 1.3s;
+}
+
+.franky:hover {
+    background: url(../img/franky.jpg) no-repeat right top;
+    background-size: 120%;
+    transition: all linear 1.3s;
+}
+
+.brook {
+    background: url(../img/brook.jpg) no-repeat center center;
+    background-size: 110%;
+    transition: all linear 1.3s;
+}
+
+.brook:hover {
+    background: url(../img/brook.jpg) no-repeat right top;
+    background-size: 120%;
     transition: all linear 1.3s;
 }
 
@@ -171,13 +268,48 @@
     color: #94cf4d;
 }
 
+.sanji .char-name {
+    color: #ebeb00;
+}
+
+.robin .char-name {
+    color: #8304cc;
+}
+
 .chopper .char-name {
     color: rgb(250, 195, 205);
 }
 
+.nami .char-name {
+    color: rgb(252, 122, 0);
+}
+
+.jinbe .char-name {
+    color: rgb(0, 181, 252);
+}
+
+.usopp .char-name {
+    color: rgb(31, 110, 0);
+}
+
+.franky .char-name {
+    color: rgb(99, 99, 99)
+}
+
+.brook .char-name {
+    color: #000000;
+}
+
 .luffy .char-alias,
 .zoro .char-alias,
-.chopper .char-alias {
+.chopper .char-alias,
+.sanji .char-alias,
+.robin .char-alias,
+.nami .char-alias,
+.jinbe .char-alias,
+.usopp .char-alias,
+.franky .char-alias,
+.brook .char-alias {
     color: #ffff;
     text-shadow: 0 0 0 white;
 }
